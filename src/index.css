@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+
+.michroma-regular {
+    font-family: 'Michroma', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+:root{font-family:'Michroma',system-ui,sans-serif;color:#f8fafc;background:#111827;font-synthesis:none;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased}.body-base{}*{box-sizing:border-box}html{background:#111827}body{min-width:320px;min-height:100vh;margin:0;background:linear-gradient(180deg,#111827 0%,#0b1120 100%)}button,a{-webkit-tap-highlight-color:transparent}a:focus-visible{outline:3px solid #93c5fd;outline-offset:3px}
+body{
+    min-width:320px;
+    min-height:100vh;
+    margin:0;
+    background-color:#111827;
+    background-image:url('./assets/background.jpg');
+    background-repeat:repeat;
+    background-position:center top;
+    background-size:cover;
+    background-attachment:fixed;
+}

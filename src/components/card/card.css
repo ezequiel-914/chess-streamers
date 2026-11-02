@@ -1,0 +1,130 @@
+.streamer-card{
+    border:1px solid rgba(148,163,184,.25);
+    background:linear-gradient(145deg, rgba(55,65,81,.96), rgba(31,41,55,.98));
+    width: 100%;
+    max-width: 400px;
+    height: 200px;
+    margin: auto;
+    margin-bottom:0;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: space-around;
+    box-shadow:0 8px 18px rgba(0,0,0,.45), 0 2px 5px rgba(0,0,0,.35), inset 0 1px rgba(255,255,255,.04);
+}
+
+.streamer-card-top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 16px;
+    min-width: 0;
+    margin-top: 0px;
+    
+}
+.streamer-card-top h2{
+    margin-right: 20px;
+    margin-top: 10px;
+    min-width: 0;
+    max-width: calc(100% - 110px);
+    overflow-wrap: anywhere;
+    word-break: break-word;
+    text-align: right;
+}
+.streamer-card-top img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.streamer-card-links{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap:12px;
+}
+.streamer-card-links span{
+    padding:0;
+    margin:0;
+    font-size:1.3rem;
+    font-weight:bolder;
+}
+.streamer-card-links a{
+    color:#93c5fd;
+    padding:5px 8px;
+    text-decoration:none;
+    border-bottom:1px solid rgba(147,197,253,.35);
+    transition:color .2s, border-color .2s;
+}
+.streamer-card-links a:hover{
+    color:#ffffff;
+    border-color:#93c5fd;
+}
+.streamer-card-bottom{
+    display: flex;
+    justify-content: space-between;
+}
+.streamer-card-bottom p{
+    margin-left: 20px;
+}
+.is-live{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-right: 20px;
+}
+.is-live-ball{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    animation: radio-light 1.5s ease-in-out infinite;
+}
+.is-live-ball--live{
+    background-color: #22c55e;
+    box-shadow: 0 0 7px #22c55e;
+}
+.is-live-ball--offline{
+    background-color: #ef4444;
+    box-shadow: 0 0 7px #ef4444;
+}
+.is-live-text p{
+    margin: 0;
+    font-size: 13px;
+}
+@keyframes radio-light{
+    0%, 100%{opacity: 1;}
+    50%{opacity: .35;}
+}
+
+@media (max-width:899px){
+    .streamer-card-links span{
+        font-size:1rem;
+    }
+    .streamer-card-links{
+        gap:4px;
+        flex-wrap:wrap;
+    }
+    .streamer-card-bottom p{
+        max-width:55%;
+        margin-left:12px;
+        font-size:.8rem;
+    }
+}
+
+@media (max-width:560px){
+    .streamer-card-top img{
+        width:64px;
+        height:64px;
+    }
+    .streamer-card-top h2{
+        margin-right:12px;
+    }
+    .streamer-card-links span{
+        font-size:.9rem;
+    }
+}
